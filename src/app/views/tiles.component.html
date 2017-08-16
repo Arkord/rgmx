@@ -1,0 +1,7 @@
+<button (click)="showData()">Show data</button>
+<masonry [options]="tileOptions">
+    <masonry-brick class="tile" *ngFor="let tile of tiles">
+        <img src="{{tile.src}}" alt="">
+    </masonry-brick>
+</masonry>
+{{message}}
